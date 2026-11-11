@@ -690,3 +690,14 @@ a.c-item:hover { border-color: var(--cu); background: rgba(240, 169, 140, .08); 
   .cinema-sticky { position: relative; height: 80vh; }
   .loader { display: none; }
 }
+
+/* ---------- Capacitación para empresas y reclutadores (sección añadida; solo clases .capa-*) ---------- */
+.capa { background: var(--cream-2); }
+.capa-grid { display: grid; gap: 18px; }
+.capa-card { display: grid; gap: 14px; align-content: start; padding: clamp(24px, 4vw, 40px); border-radius: 28px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 30px 60px -40px rgba(20, 32, 58, .45); }
+.capa-card h3 { font: 700 clamp(1.35rem, 2.6vw, 1.8rem)/1.2 var(--f-display); letter-spacing: -.02em; }
+.capa-card p { color: var(--ink-2); line-height: 1.65; }
+.capa-cta { margin-top: clamp(28px, 4vw, 44px); text-align: center; }
+@media (min-width: 720px) {
+  .capa-grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+}
